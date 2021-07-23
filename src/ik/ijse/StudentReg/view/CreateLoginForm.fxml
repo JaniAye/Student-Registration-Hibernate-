@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="456.0" prefWidth="397.0" style="-fx-background-color: #95a5a6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.StudentReg.controller.CreateLoginFormContrller">
+   <children>
+      <AnchorPane prefHeight="35.0" prefWidth="397.0" style="-fx-background-color: #34495e;">
+         <children>
+            <Label alignment="CENTER" layoutX="3.0" layoutY="7.0" prefHeight="20.0" prefWidth="388.0" text="Create Login" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtUn" layoutX="66.0" layoutY="175.0" prefHeight="31.0" prefWidth="272.0" promptText="User Name">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtpss" layoutX="66.0" layoutY="229.0" prefHeight="31.0" prefWidth="272.0" promptText="Password">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtretype" layoutX="66.0" layoutY="279.0" prefHeight="31.0" prefWidth="272.0" promptText="Re-Type Password">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="101.0" fitWidth="109.0" layoutX="151.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/User.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnRegister" layoutX="62.0" layoutY="331.0" onAction="#RegisterOnAction" prefHeight="37.0" prefWidth="272.0" style="-fx-background-color: #16a085;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnLogin" layoutX="64.0" layoutY="381.0" onAction="#LoginOnAction" prefHeight="37.0" prefWidth="272.0" style="-fx-background-color: #2ecc71;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="imgClose" fitHeight="20.0" fitWidth="19.0" layoutX="368.0" layoutY="8.0" onMouseClicked="#imgCloseOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/cancel.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

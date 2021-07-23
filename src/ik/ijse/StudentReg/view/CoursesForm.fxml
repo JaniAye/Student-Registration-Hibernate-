@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="575.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.StudentReg.controller.CoursesFormController">
+   <children>
+      <JFXTextField fx:id="txtCode" labelFloat="true" layoutX="66.0" layoutY="97.0" onAction="#codeOnAction" prefHeight="26.0" prefWidth="135.0" promptText="Code">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtFee" labelFloat="true" layoutX="461.0" layoutY="97.0" prefHeight="26.0" prefWidth="135.0" promptText="Fee">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCnAme" labelFloat="true" layoutX="255.0" layoutY="97.0" prefHeight="26.0" prefWidth="161.0" promptText="Course Name">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDuration" labelFloat="true" layoutX="667.0" layoutY="97.0" prefHeight="26.0" prefWidth="135.0" promptText="Duration">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="3.0" layoutY="193.0" prefHeight="11.0" prefWidth="867.0" />
+      <TableView fx:id="tblCourseDetails" layoutX="54.0" layoutY="229.0" prefHeight="291.0" prefWidth="765.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="113.0" text="Code" />
+          <TableColumn fx:id="colName" prefWidth="207.0" text="Course Name" />
+            <TableColumn fx:id="colFee" prefWidth="173.0" text="Fee" />
+            <TableColumn fx:id="colDuration" prefWidth="190.0" text="Duration" />
+            <TableColumn fx:id="colOPt" prefWidth="81.0" text="Operator" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnSave" layoutX="668.0" layoutY="148.0" onAction="#saveOnAction" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #1abc9c;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="528.0" layoutY="148.0" onAction="#cancelOnAction" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #e74c3c;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="63.0" layoutY="20.0" text="Course ">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

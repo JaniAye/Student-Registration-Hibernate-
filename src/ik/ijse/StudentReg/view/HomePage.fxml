@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="598.0" prefWidth="1019.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.StudentReg.controller.HomePageFormController">
+   <children>
+      <AnchorPane prefHeight="631.0" prefWidth="147.0" style="-fx-background-color: #576574;">
+         <children>
+            <JFXButton fx:id="btnHome" layoutX="8.0" layoutY="103.0" onAction="#HomeOnAction" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: #8395a7;" text="Home" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnReg" layoutX="7.0" layoutY="300.0" onAction="#registrationOnAction" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: #8395a7;" text="Registration" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnCourse" layoutX="7.0" layoutY="235.0" onAction="#courseOnAction" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: #8395a7;" text="Courses" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="20.0" />
+               </font></JFXButton>
+            <Label fx:id="lbltime" layoutY="1.0" text="Label" textFill="#dddddd">
+               <font>
+                  <Font name="Book Antiqua Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnlogout" layoutX="6.0" layoutY="437.0" onAction="#LogOutOnAction" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: #8395a7;" text="Logout" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSettings" layoutX="7.0" layoutY="368.0" onAction="#SettingOnAction" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: #8395a7;" text="Settings" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnstudent" layoutX="7.0" layoutY="170.0" onAction="#StudentOnAction" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: #8395a7;" text="Student" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="147.0" prefHeight="56.0" prefWidth="910.0" style="-fx-background-color: #576574;">
+         <children>
+            <Label layoutX="273.0" prefHeight="48.0" prefWidth="337.0" text="Royal Institute" textFill="#f6b93b">
+               <font>
+                  <Font name="Bodoni MT Black Italic" size="38.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgAppCancel" fitHeight="21.0" fitWidth="23.0" layoutX="870.0" layoutY="17.0" onMouseClicked="#imgCLoseOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/cancel.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="root" layoutX="147.0" layoutY="56.0" prefHeight="575.0" prefWidth="910.0" style="-fx-background-color: #dcdde1;" />
+   </children>
+</AnchorPane>

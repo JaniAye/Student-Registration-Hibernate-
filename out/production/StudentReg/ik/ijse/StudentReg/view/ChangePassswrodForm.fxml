@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="575.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.StudentReg.controller.ChangePassswrodFormController">
+   <children>
+      <Label layoutX="57.0" layoutY="45.0" text="Settings">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="137.0" text="Change Password" textFill="#ff0f0f">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUn" editable="false" layoutX="414.0" layoutY="228.0" prefHeight="37.0" prefWidth="329.0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="206.0" layoutY="231.0" text="User Name :-" textFill="#6b6b6b">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOldPs" layoutX="414.0" layoutY="282.0" prefHeight="37.0" prefWidth="329.0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="206.0" layoutY="285.0" text="Old Password :-" textFill="#6b6b6b">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNewPass" layoutX="414.0" layoutY="345.0" prefHeight="37.0" prefWidth="329.0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="206.0" layoutY="348.0" text="New Password :-" textFill="#6b6b6b">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="126.0" fitWidth="137.0" layoutX="721.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/User.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnChange" layoutX="551.0" layoutY="448.0" onAction="#ChangeOnAction" prefHeight="54.0" prefWidth="193.0" style="-fx-background-color: #1abc9c;" text="Change" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="217.0" layoutY="450.0" onAction="#CancelOnAction" prefHeight="54.0" prefWidth="193.0" style="-fx-background-color: #e74c3c;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

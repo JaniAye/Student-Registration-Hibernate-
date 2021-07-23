@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="575.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.StudentReg.controller.DashBoardFormController">
+   <children>
+      <Label layoutX="48.0" layoutY="43.0" text="Welcome :-" textFill="#535c68">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblun" layoutX="282.0" layoutY="45.0" text="++++++++" textFill="#eb3b5a">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="209.0" text="Total Students :" textFill="#535c68">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="546.0" layoutY="216.0" text="Total Courses :" textFill="#535c68">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblcountOFStd" layoutX="188.0" layoutY="268.0" text="10" textFill="#f0932b">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="100.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCountOFCourse" layoutX="636.0" layoutY="267.0" text="10" textFill="#f0932b">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="100.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
